@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAazhyLfdNoz0M06ObW8XRi1RbYETRNn6w&callback=initMap">
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="script_map.js"></script>
+        <title>MY WAYPOINT</title>
+        <h1><b>MY WAYPOINT</b></h1>
+        </head>
+        <body onload="initMap()">
+        <form>
+            <input type="text" id="loc" placeholder="Your Location" value="Buffalo"> <br>
+            <input type="text" id="des" placeholder="Your Destination" value="NYC"> <br>
+            <input type="button" id="b1" onclick="showRoute()" value="Search"><br>
+        </form>
+        <div id="map"></div>
+        <div id="weather"></div>
+        <!--<p> <b>-&#45;&#45; Weather Details Below -&#45;&#45;</b></p>-->
+        <!--<input type="text" id="hum"><br>-->
+        <!--<input type="text" id="temp"><br>-->
+        <!--<input type="text" id="max"><br>-->
+        <!--<input type="text" id="min"><br>-->
+    </body>
+</html>
